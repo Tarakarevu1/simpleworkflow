@@ -1,6 +1,13 @@
 name: Python application
-
-on: [push, pull_request]
+on:
+  push:
+    paths:
+      - 'sort/**'
+      - 'test_sort.py'
+  pull_request:
+    paths:
+      - 'sort/**'
+      - 'test_sort.py'
 
 jobs:
   build:
