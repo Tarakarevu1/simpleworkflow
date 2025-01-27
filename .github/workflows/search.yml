@@ -1,5 +1,14 @@
 name: search
-on: [push, pull_request]
+on:
+  push:
+    paths:
+      - 'search/**'
+      - 'test_search.py'
+  pull_request:
+    paths:
+      - 'search/**'
+      - 'test_search.py'
+
 jobs:
   test:
     runs-on: ubuntu-latest
