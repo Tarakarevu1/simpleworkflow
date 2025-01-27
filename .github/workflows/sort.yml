@@ -15,4 +15,4 @@ jobs:
         python-version: '3.10'  
     - name: Run tests
       run: |
-        python -m unittest discover -s . -p "test_sort.py"
+        python test_sort.py
