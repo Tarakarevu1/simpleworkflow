@@ -1,8 +1,5 @@
 name: simple
-on: 
-  push: 
-    paths: 
-      - 'simple/**'
+on: push
 
 jobs:
   ubuntu:
