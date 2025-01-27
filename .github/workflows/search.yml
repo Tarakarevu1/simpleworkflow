@@ -1,27 +1,17 @@
-name : search
-on: [push,pull_request]
-jobs :
+name: search
+on: [push, pull_request]
+jobs:
   test:
     runs-on: ubuntu-latest
-    steps :
-    - name : checkout repository
+    steps:
+    - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name : Setup python
+    - name: Setup python
       uses: actions/setup-python@v2
       with:
         python-version: '3.10'
-    -name : Run tests
-      run : |
-        python -m "test_search.py"
-      
 
-
-
-
-
-
-
-
-    
-    
+    - name: Run tests
+      run: |
+        python test_search.py
